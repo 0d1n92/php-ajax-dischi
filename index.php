@@ -3,7 +3,9 @@
 - Solo con l’utilizzo di PHP, che stampa
 direttamente i dischi in pagina: al caricamento
 della pagina ci saranno tutti i dischi. -->
-
+<?php
+include  __DIR__."/db.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
