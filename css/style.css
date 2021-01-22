@@ -26,6 +26,25 @@ textarea:focus {
 }
 
 /*RESET CLOSE*/
+.wrapper_margin_68 {
+  height: 100%;
+  max-width: 68%;
+  margin: auto;
+}
+
 header {
+  height: 90px;
+  width: 100%;
   background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+header #header_logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header #header_logo > a > img {
+  height: 55px;
 }

@@ -19,3 +19,8 @@ border: 0;
 outline: none;
 }
 /*RESET CLOSE*/
+.wrapper_margin_#{$wrapperWidth}{
+    height: 100%;
+    max-width: #{$wrapperWidth} +"%";
+    margin: auto;
+}
