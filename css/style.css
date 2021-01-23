@@ -26,6 +26,10 @@ textarea:focus {
 }
 
 /*RESET CLOSE*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .wrapper_margin_68 {
   height: 100%;
   max-width: 68%;
@@ -76,12 +80,21 @@ main #container_disk div.box_card_disk:nth-child(3n) .card {
 main #container_disk div.box_card_disk .card {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
   width: 200px;
-  height: 300px;
   align-items: center;
   background-color: black;
+  text-align: center;
 }
 main #container_disk div.box_card_disk .card > img {
-  height: 100px;
+  height: 150px;
+}
+main #container_disk div.box_card_disk .card .title_disk, main #container_disk div.box_card_disk .card .author {
+  margin-top: 10px;
+}
+main #container_disk div.box_card_disk .card .author {
+  color: grey;
+}
+main #container_disk div.box_card_disk .card .author, main #container_disk div.box_card_disk .card .year {
+  font-size: 14px;
 }

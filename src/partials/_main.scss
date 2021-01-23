@@ -12,21 +12,35 @@ main {
              &:nth-child(3n) .card {
                 float: right;
             }
-            
-            
+                      
             margin-top: 50px;
             
             .card{
                 display: flex;
                 flex-direction: column;
-                padding: 30px;
+                padding: 20px;
                 width: 200px;
-                height: 300px;
                 align-items: center;
                 background-color: black;
+                text-align: center;
                 >img {
-                    height: 100px;
+                    height: 150px;
                 }
+                .title_disk,.author {
+                    margin-top: 10px;
+                   
+                    
+                }
+                .author {
+                    color: grey;
+                   
+                }
+                 .author,.year {
+                        font-size: 14px;
+                    }
+
+                
+                                
             }
         }
     }

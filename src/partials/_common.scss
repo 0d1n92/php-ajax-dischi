@@ -19,6 +19,11 @@ border: 0;
 outline: none;
 }
 /*RESET CLOSE*/
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    
+}
 .wrapper_margin_#{$wrapperWidth}{
     height: 100%;
     max-width: #{$wrapperWidth} +"%";
