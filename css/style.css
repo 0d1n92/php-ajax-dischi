@@ -81,6 +81,7 @@ main #container_disk div.box_card_disk .card {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  height: 280px;
   width: 200px;
   align-items: center;
   background-color: black;
