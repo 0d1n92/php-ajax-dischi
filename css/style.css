@@ -63,11 +63,17 @@ main {
   background-color: #121212;
   margin-top: 90px;
 }
-main div.box_card_disk {
+main #container_disk div.box_card_disk {
   width: calc(80% / 3);
   margin-top: 50px;
 }
-main div.box_card_disk .card {
+main #container_disk div.box_card_disk:nth-child(3n-1) .card {
+  margin: 0 auto;
+}
+main #container_disk div.box_card_disk:nth-child(3n) .card {
+  float: right;
+}
+main #container_disk div.box_card_disk .card {
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -76,6 +82,6 @@ main div.box_card_disk .card {
   align-items: center;
   background-color: black;
 }
-main div.box_card_disk .card > img {
+main #container_disk div.box_card_disk .card > img {
   height: 100px;
 }
