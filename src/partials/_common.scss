@@ -24,3 +24,12 @@ outline: none;
     max-width: #{$wrapperWidth} +"%";
     margin: auto;
 }
+
+.container_flex {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+ .space_between {
+        justify-content: space-between;
+    }

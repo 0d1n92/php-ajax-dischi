@@ -32,6 +32,15 @@ textarea:focus {
   margin: auto;
 }
 
+.container_flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
 header {
   height: 90px;
   width: 100%;
@@ -47,4 +56,24 @@ header #header_logo {
 }
 header #header_logo > a > img {
   height: 55px;
+}
+
+main {
+  color: white;
+  background-color: #121212;
+  margin-top: 90px;
+}
+main div.box_card_disk {
+  width: calc(80% / 3);
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: black;
+}
+main div.box_card_disk > img {
+  height: 100px;
 }
