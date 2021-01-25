@@ -1855,10 +1855,9 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('http://localhost/php-ajax-dischi/server.php').then(function (element) {
+    axios.get('server.php').then(function (element) {
       console.log(element);
-      _this.library = element;
-      console.log(_this.library);
+      _this.library = element.data;
     });
   }
 });

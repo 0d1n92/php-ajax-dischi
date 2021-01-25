@@ -1,4 +1,6 @@
-
+<?php
+  include __DIR__ ."/includes/variable.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +21,8 @@
         </a>
     </div>
     <div class=header_right>
-    <form action="" method="get">
-    <section></section>
+    <form action="<?php $genrs=$_GET["Genrs"] ?>" method="post">
+    
     <select name="Genrs" id="genrs">
       <option value="Rock">Rock</option>
       <option value="Pop">Pop</option>

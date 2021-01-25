@@ -1,15 +1,23 @@
 <?php
   include __DIR__ . "/db.php";
+  include __DIR__ . "/includes/variable.php";
   header("Content-type: application/json");
-  $genr="Pop";
-  if($genr!=null){
-  foreach ($libraryDisk["response"] as $disk) {
-    if($disk["genre"]=="Pop") {
-      echo json_encode($libraryDisk["response"]);
+  $genreArray=[];
+  if($genrs!=null){
+    foreach ($libraryDisk["response"] as $disk) {
+      if($disk["genre"]==$genrs) {
+         $genreArray[]=$disk;
+      }
+    
     }
-  }} else {
-   echo json_encode($libraryDisk);
+  } else {
+    foreach ($libraryDisk["response"] as $disk) {
+         $genreArray[]=$disk;
+      }
   }
+      
+      
+    echo json_encode($genreArray);
  
  
  ?>

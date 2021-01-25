@@ -10,13 +10,11 @@ var app = new Vue({
   },
   mounted: function(){
     
-    axios.get('http://localhost/php-ajax-dischi/server.php').then( element => {
+    axios.get('server.php').then( element => {
      console.log(element);
-      this.library= element;
-      console.log(this.library);
+      this.library= element.data;
      
     });
-    
     
   }
  
