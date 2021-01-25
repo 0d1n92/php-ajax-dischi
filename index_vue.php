@@ -18,22 +18,32 @@
         <img src='img/logo.svg' alt="">
         </a>
     </div>
+    <div class=header_right>
+    <form action="" method="get">
+    <section></section>
+    <select name="Genrs" id="genrs">
+      <option value="Rock">Rock</option>
+      <option value="Pop">Pop</option>
+      <option value="Rap">Rap</option>
+    </select>
+    </form>
+    </div>
   </header>
   
 <main id="app">
     <div id="container_disk" class="container_flex wrapper_margin_68 space_between">
    
-      <div class=box_card_disk>
+      <div v-for="disc in library"class=box_card_disk>
           <div class="card">
-              <img src="" alt="">
-              <h4 class="title_disk">dddd</h4>
-              <p class="author">dsadsadas</p>
-              <p class="year">dasdsadsadsadasd</p>
+              <img :src="disc.poster" :alt="'cover_'+ disc.title">
+              <h4 class="title_disk">{{disc.title}}</h4>
+              <p class="author">{{disc.author}}</p>
+              <p class="year">{{disc.year}}</p>
           </div>
       </div>
                   
     </div>
-    <script src="js/script.js"></script>
 </main>
+ <script src="js/script.js"></script>
 </body>
 </html>
