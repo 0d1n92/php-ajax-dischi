@@ -2,9 +2,10 @@ main {
     color: white;
     background-color: #121212;
     margin-top: 90px;
+    height: 100%;
     #container_disk{
         div.box_card_disk {
-            width:calc(80% / 3);
+            width:calc(100% / 3);
             
             &:nth-child(3n -1) .card {
                 margin:0 auto;

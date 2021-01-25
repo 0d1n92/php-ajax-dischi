@@ -14,11 +14,10 @@
                     <p class="year"><?=$data["year"]?></p>
                 </div>
             </div>
-        
+                  
             <?php
         }
     ?>  
-
 
     </div>
 </main>
